@@ -23,11 +23,9 @@ type Car struct {
 func (c *Car) setName(name string) {
 	c.Name = name
 }
-
 func (c *Car) setSize(size int) {
 	c.Size = size
 }
-
 func (c *Car) GetName() string {
 	return c.Name
 }
