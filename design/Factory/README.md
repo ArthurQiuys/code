@@ -10,8 +10,7 @@ getName() string
 getSize() int
 }
 ```
-
-2.实现对应的产品
+2. 实现对应的产品
 **此处定义了该产品的实现**
 ```go
 type Car struct {
@@ -35,7 +34,7 @@ func (c *Car) GetSize() int {
 }
 ```
 
-3.工厂接口
+3. 工厂接口
 **此处定义了该工厂的定义**
 ```go
 func MakeCar(brand string) ICar {
@@ -49,3 +48,4 @@ func MakeCar(brand string) ICar {
 	}
 }
 ```
+4. 构体将发挥工厂的作用， 即通过传入参数构建所需类型的枪支。 main.go 则扮演着客户端的角色。
